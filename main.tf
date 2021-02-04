@@ -1,6 +1,6 @@
 module "origin_label" {
   source  = "cloudposse/label/null"
-  version = "0.22.1"
+  version = "0.23.0"
 
   attributes = ["origin"]
 
