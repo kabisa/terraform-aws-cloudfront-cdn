@@ -38,6 +38,11 @@ output "cf_origin_access_identity" {
   description = "A shortcut to the full path for the origin access identity to use in CloudFront"
 }
 
+output "cf_origin_access_identity_iam_arn" {
+  value       = try(aws_cloudfront_origin_access_identity.default[0].iam_arn, "")
+  description = "A pre-generated ARN for use in S3 bucket policies"
+}
+
 output "logs" {
   value       = module.logs
   description = "Logs resource"

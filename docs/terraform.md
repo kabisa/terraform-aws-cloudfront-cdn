@@ -88,6 +88,7 @@
 | cf\_hosted\_zone\_id | CloudFront Route 53 Zone ID |
 | cf\_id | ID of CloudFront distribution |
 | cf\_origin\_access\_identity | A shortcut to the full path for the origin access identity to use in CloudFront |
+| cf\_origin\_access\_identity\_iam\_arn | A pre-generated ARN for use in S3 bucket policies |
 | cf\_status | Current status of the distribution |
 | logs | Logs resource |
 
